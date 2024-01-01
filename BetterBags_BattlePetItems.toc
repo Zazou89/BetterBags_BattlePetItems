@@ -1,0 +1,9 @@
+## Interface: 100200
+## Title: BetterBags - Battle Pets Items
+## Author: Zazou
+## Version: 1.0.0
+## Notes: Category for all the Battle Pets Items
+## X-Curse-Project-ID: 956754
+## IconTexture: Interface\Icons\icon_upgradestone_beast_rare
+
+main.lua
