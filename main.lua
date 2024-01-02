@@ -39,10 +39,6 @@ local MiscellaneousItems = {
 	183113, --Flexing Phalanges
 }
 
-for _, ItemID in ipairs(MiscellaneousItems) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
-
 --Currency Items
 local CurrencyItems = { 
 	101529, --Celestial Coin
@@ -53,10 +49,6 @@ local CurrencyItems = {
 	169665, -- Cleansed Remains
 	174360, -- Shadowy Gem
 }
-
-for _, ItemID in ipairs(CurrencyItems) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
 
 --Battle Pet Containing Items
 local BattlePetContainingItems = {
@@ -69,10 +61,6 @@ local BattlePetContainingItems = {
 	153191, --Cracked Fel-Spotted Egg
 	182607, --Hairy Egg
 }
-
-for _, ItemID in ipairs(BattlePetContainingItems) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
 
 --Supplies Bags
 local SuppliesBags = {
@@ -96,10 +84,6 @@ local SuppliesBags = {
 	151638, --Leprous Sack of Pet Supplies
 }
 
-for _, ItemID in ipairs(SuppliesBags) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
-
 --Rare Stones
 local RareStones = {
 	92741, --Flawless Battle-Stone
@@ -116,9 +100,6 @@ local RareStones = {
 	92742, --Polished Battle-Stone
 	98715, --Marked Flawless Battle-Stone
 }
-for _, ItemID in ipairs(RareStones) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
 
 --Level Stones
 local LevelStones = {
@@ -136,9 +117,6 @@ local LevelStones = {
 	122457, --Ultimate Battle-Training Stone
 	127755, --Fel-Touched Battle-Training Stone
 }
-for _, ItemID in ipairs(LevelStones) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
 
 --Battle Pet Toys
 local BattlePetToys = {
@@ -156,9 +134,6 @@ local BattlePetToys = {
 	163705, --Imaginary Gun
 	174925, --Void Tendril Pet Leash
 }
-for _, ItemID in ipairs(BattlePetToys) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
-end
 
 --Costume Items
 local CostumeItems = {
@@ -172,6 +147,20 @@ local CostumeItems = {
 	116812, --"Yipp-Saron" Costume
 	128650, --"Merry Munchkin" Costume
 }
-for _, ItemID in ipairs(CostumeItems) do
-    categories:AddItemToCategory(ItemID, "Battle Pet")
+
+local allItems = {
+    MiscellaneousItems,
+    CurrencyItems,
+    BattlePetContainingItems,
+    SuppliesBags,
+    RareStones,
+    LevelStones,
+    BattlePetToys,
+    CostumeItems
+}
+
+for _, itemList in ipairs(allItems) do
+    for _, ItemID in ipairs(itemList) do
+        categories:AddItemToCategory(ItemID, "Battle Pet")
+    end
 end
