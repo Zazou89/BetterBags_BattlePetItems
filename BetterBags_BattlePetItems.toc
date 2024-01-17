@@ -1,4 +1,4 @@
-## Interface: 100200
+## Interface: 100205
 ## Title: BetterBags - Battle Pets Items
 ## Author: Zazou
 ## Version: 1.0.0
