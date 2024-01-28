@@ -159,8 +159,8 @@ local allItems = {
     CostumeItems
 }
 
-for _, itemList in ipairs(allItems) do
-    for _, ItemID in ipairs(itemList) do
+for _, itemList in pairs(allItems) do
+    for _, ItemID in pairs(itemList) do
         categories:AddItemToCategory(ItemID, "Battle Pet")
     end
 end
