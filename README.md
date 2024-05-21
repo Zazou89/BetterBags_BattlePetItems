@@ -12,6 +12,9 @@ This addon must be used with [BetterBags](https://www.curseforge.com/wow/addons/
 
 *Original list comes from [LownIgnitus](https://www.curseforge.com/wow/addons/adibags-battle-pet-items)*
 
+# Preview
+![Preview](https://i.imgur.com/sY2V2mX.png)
+
 # Discover my other plugins
 I've created a few plugins for BetterBags:
 - [BetterBags - Dragonflight Reputation](https://www.curseforge.com/wow/addons/betterbags-dragonfligh-reputation-insignia): categories for all Dragonflight reputation items
