@@ -174,8 +174,10 @@ local allItems = {
     CostumeItems
 }
 
---Wipe Category
-categories:WipeCategory("Battle Pet") --Deletes category before adding translations
+--Delete category before adding translations
+categories:DeleteCategory("Battle Pet") 
+
+--Wipe category too ensure the items list is up to date
 categories:WipeCategory(L("Battle Pet"))
 
 --Loop
