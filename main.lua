@@ -4,8 +4,23 @@ local addon = LibStub('AceAddon-3.0'):GetAddon("BetterBags")
 ---@class Categories: AceModule
 local categories = addon:GetModule('Categories')
 
----@class Localization: AceModule
-local L = addon:GetModule('Localization')
+-- Localization table
+local locales = {
+    ["enUS"] = {
+        ["Battle Pet"] = "Battle Pet",
+    },
+    ["frFR"] = {
+        ["Battle Pet"] = "Mascottes de combat",
+    }
+}
+
+-- Detects current language
+local currentLocale = GetLocale()
+
+-- Function to get the translation
+local function L(key)
+    return locales[currentLocale] and locales[currentLocale][key] or locales["enUS"][key]
+end
 
 -- List comes from @LownIgnitus
 -- https://www.curseforge.com/wow/addons/adibags-battle-pet-items
@@ -159,8 +174,13 @@ local allItems = {
     CostumeItems
 }
 
+--Wipe Category
+categories:WipeCategory("Battle Pet") --Deletes category before adding translations
+categories:WipeCategory(L("Battle Pet"))
+
+--Loop
 for _, itemList in pairs(allItems) do
     for _, ItemID in pairs(itemList) do
-        categories:AddItemToCategory(ItemID, "Battle Pet")
+		categories:AddItemToCategory(ItemID, L("Battle Pet"))
     end
 end
