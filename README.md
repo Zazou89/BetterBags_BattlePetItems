@@ -22,4 +22,4 @@ I've created a few plugins for BetterBags:
 
 
 # Joins us !
-[![Discord Banner](https://i.imgur.com/ZsPCQn1.png)(https://discord.gg/a6DQuK8hV7)
+[![Discord Banner](https://i.imgur.com/ZsPCQn1.png)](https://discord.gg/a6DQuK8hV7)
