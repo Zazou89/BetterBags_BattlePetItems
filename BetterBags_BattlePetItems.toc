@@ -1,7 +1,7 @@
 ## Interface: 100207
 ## Title: BetterBags - Battle Pets Items
 ## Author: Zazou
-## Version: 1.0.4
+## Version: 1.0.7
 ## Notes: Category for all the Battle Pets Items
 ## Dependencies: BetterBags
 ## X-Curse-Project-ID: 956754
