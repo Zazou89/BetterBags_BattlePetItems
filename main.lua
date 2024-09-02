@@ -53,6 +53,7 @@ local MiscellaneousItems = {
 	183112, --Animated Radius
 	183113, --Flexing Phalanges
 	223970, --Little Buddy Biscuits
+	226021, --Jar of Pickles
 }
 
 --Currency Items
